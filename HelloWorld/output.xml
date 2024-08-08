@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-08-08T11:14:08.813157" rpa="false" schemaversion="5">
+<suite id="s1" name="Hello" source="/home/tuetd/Desktop/AutomationTest/HelloWorld/hello.robot">
+<test id="s1-t1" name="My Test" line="8">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-08T11:14:08.836314" level="INFO">Hello, World!</msg>
+<arg>${Message}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-08T11:14:08.836174" elapsed="0.000228"/>
+</kw>
+<kw name="My Keyword">
+<kw name="Directory Should Exist" owner="OperatingSystem">
+<msg time="2024-08-08T11:14:08.837381" level="INFO" html="true">Directory '&lt;a href="file:///home/tuetd/Desktop/AutomationTest/HelloWorld"&gt;/home/tuetd/Desktop/AutomationTest/HelloWorld&lt;/a&gt;' exists.</msg>
+<arg>${path}</arg>
+<doc>Fails unless the given path points to an existing directory.</doc>
+<status status="PASS" start="2024-08-08T11:14:08.837241" elapsed="0.000183"/>
+</kw>
+<arg>/home/tuetd/Desktop/AutomationTest/HelloWorld</arg>
+<status status="PASS" start="2024-08-08T11:14:08.836826" elapsed="0.000652"/>
+</kw>
+<doc>Example test.</doc>
+<status status="PASS" start="2024-08-08T11:14:08.835688" elapsed="0.001982"/>
+</test>
+<doc>Example of usig the space separate format.</doc>
+<status status="PASS" start="2024-08-08T11:14:08.813887" elapsed="0.024118"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Hello">Hello</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
