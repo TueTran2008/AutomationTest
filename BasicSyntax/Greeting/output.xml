@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-08-09T11:06:00.888147" rpa="false" schemaversion="5">
+<suite id="s1" name="Greeting" source="/home/tuetd/Desktop/AutomationTest/BasicSyntax/Greeting">
+<kw name="Global Suite Setup" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-09T11:06:00.906059" level="INFO">Our Robot awesomeness begin!</msg>
+<arg>Our Robot awesomeness begin!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-09T11:06:00.905954" elapsed="0.000151"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-08-09T11:06:00.906576" level="INFO">${GLOBAL_VARIABLE} = This is Global Variables</msg>
+<arg>${GLOBAL_VARIABLE}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-08-09T11:06:00.906254" elapsed="0.000357"/>
+</kw>
+<status status="PASS" start="2024-08-09T11:06:00.905598" elapsed="0.001067"/>
+</kw>
+<suite id="s1-s1" name="Basic" source="/home/tuetd/Desktop/AutomationTest/BasicSyntax/Greeting/basic.robot">
+<test id="s1-s1-t1" name="Original Greetings" line="7">
+<kw name="Print Your Name" owner="greeting">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-09T11:06:00.910017" level="INFO">Keywork Darwin Tran</msg>
+<arg>Keywork ${name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-09T11:06:00.909873" elapsed="0.000235"/>
+</kw>
+<arg>${YOUR_NAME}</arg>
+<status status="PASS" start="2024-08-09T11:06:00.909623" elapsed="0.000565"/>
+</kw>
+<kw name="Print Your Name" owner="greeting">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-09T11:06:00.910897" level="INFO">Keywork John Wick</msg>
+<arg>Keywork ${name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-09T11:06:00.910788" elapsed="0.000147"/>
+</kw>
+<arg>John Wick</arg>
+<status status="PASS" start="2024-08-09T11:06:00.910518" elapsed="0.000465"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-09T11:06:00.911188" level="INFO">Darwin Tran</msg>
+<arg>${YOUR_NAME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-09T11:06:00.911081" elapsed="0.000180"/>
+</kw>
+<tag>ubuntu</tag>
+<status status="PASS" start="2024-08-09T11:06:00.909287" elapsed="0.002131"/>
+</test>
+<test id="s1-s1-t2" name="Another Greetings" line="13">
+<kw name="Print Your Name" owner="greeting">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-09T11:06:00.912418" level="INFO">Keywork dream</msg>
+<arg>Keywork ${name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-09T11:06:00.912264" elapsed="0.000193"/>
+</kw>
+<arg>${MY_DREAM}</arg>
+<status status="PASS" start="2024-08-09T11:06:00.911937" elapsed="0.000569"/>
+</kw>
+<kw name="Print Your Name" owner="greeting">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-09T11:06:00.912952" level="INFO">Keywork This is Global Variables</msg>
+<arg>Keywork ${name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-09T11:06:00.912846" elapsed="0.000141"/>
+</kw>
+<arg>${GLOBAL_VARIABLE}</arg>
+<status status="PASS" start="2024-08-09T11:06:00.912626" elapsed="0.000408"/>
+</kw>
+<tag>centos</tag>
+<status status="PASS" start="2024-08-09T11:06:00.911576" elapsed="0.001560"/>
+</test>
+<doc>Greeting RobotFramwork Learning</doc>
+<status status="PASS" start="2024-08-09T11:06:00.906708" elapsed="0.006723"/>
+</suite>
+<kw name="Global Suite Teardown" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-09T11:06:00.914233" level="INFO">Our end of awesomeness!</msg>
+<arg>Our end of awesomeness!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-09T11:06:00.914096" elapsed="0.000210"/>
+</kw>
+<status status="PASS" start="2024-08-09T11:06:00.913954" elapsed="0.000400"/>
+</kw>
+<status status="PASS" start="2024-08-09T11:06:00.888917" elapsed="0.025460"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">centos</stat>
+<stat pass="1" fail="0" skip="0">ubuntu</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Greeting">Greeting</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Basic">Greeting.Basic</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
