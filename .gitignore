@@ -1,0 +1,5 @@
+output.xml
+log.html
+report.html
+02-classroom/libraries/helper_robot/.venv/*
+02-classroom/libraries/helper_robot/target/*
