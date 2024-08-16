@@ -2,3 +2,6 @@
 *.html
 02-classroom/libraries/helper_robot/.venv/*
 02-classroom/libraries/helper_robot/target/*
+*.log
+Login_Website/*.png
+
